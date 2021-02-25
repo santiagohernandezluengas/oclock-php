@@ -1,0 +1,67 @@
+body {
+    font-family: sans-serif;
+    height: 110vh;
+    background-image: linear-gradient(to top, rgba(235, 192, 253, 0.7) 0%, rgba(217, 222, 216, 0.7) 100%),
+        url(../img/fondo.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    .dark{
+        background-color: #000;
+    }
+}
+
+.h1 {
+    text-align: center;
+    font-size: 40px;
+    text-decoration: underline;
+    transition: 0.2s ease all;
+    &:hover {
+        color: #ff3e00;
+        transition: 0.2s all;
+    }
+}
+
+.table {
+    border: 2px solid black;
+    width: 20%;
+    margin: auto;
+    position: relative;
+    height: 150px;
+    .hover {
+        .b {
+            justify-content: space-between;
+            height: 15px;
+            margin-top: 15px;
+            position: absolute;
+            background: $colorFondo1;
+            border: 1px solid black;
+            font-size: $tamanoDeFuente;
+            color: $colorLetra2;
+            left: 0px;
+            width: $ancho;
+            &:hover {
+                background: $hover1;
+                transition: 0.3s all;
+                transform: translate(-40px);
+                z-index: 1000;
+            }
+        }
+        span {
+            height: 15px;
+            margin-top: 15px;
+            position: absolute;
+            right: 0px;
+            border: 1px solid black;
+            background-color: $colorFondo2;
+            font-size: $tamanoDeFuente;
+            width: $ancho;
+            &:hover {
+                background: $hover2;
+                transition: 0.3s all;
+                transform: translate(40px);
+                z-index: 1000;
+            }
+        }
+    }
+}
